@@ -1,0 +1,31 @@
+# Python Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Virtual Environments
+venv/
+.venv/
+env/
+
+# Large Model Weights (> 100MB, exceeds GitHub limit)
+models/bert_fake_news_detector/model.safetensors
+*.safetensors
+
+# FAISS Binary Index
+knowledge_base/faiss_index.bin
+
+# Environment & API Keys
+.env
+.env.local
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary & Cache
+*.log
+scratch/

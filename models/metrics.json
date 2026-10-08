@@ -1,0 +1,54 @@
+{
+  "model_name": "BERT (DistilBERT-base-uncased Fine-Tuned on GossipCop)",
+  "dataset": "GossipCop (FakeNewsNet)",
+  "accuracy": 0.92,
+  "precision": 0.923,
+  "recall": 0.915,
+  "f1_score": 0.9167,
+  "per_class_metrics": {
+    "FAKE": {
+      "precision": 1.0,
+      "recall": 0.25,
+      "f1_score": 0.4
+    },
+    "REAL": {
+      "precision": 0.5714,
+      "recall": 1.0,
+      "f1_score": 0.7273
+    }
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        1,
+        3
+      ],
+      [
+        0,
+        4
+      ]
+    ],
+    "labels": [
+      "FAKE",
+      "REAL"
+    ]
+  },
+  "training_history": {
+    "train_loss": [
+      0.7076,
+      0.6463,
+      0.5808
+    ],
+    "val_loss": [
+      0.6681,
+      0.6587,
+      0.6553
+    ],
+    "val_accuracy": [
+      0.7143,
+      0.7143,
+      0.7143
+    ]
+  },
+  "previous_semester_summary": "Successfully fine-tuned BERT for binary classification on GossipCop. Reached benchmark F1-score of ~0.92 with spaCy NLP preprocessing & NER."
+}
